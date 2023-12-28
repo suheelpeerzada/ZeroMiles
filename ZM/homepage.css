@@ -1,0 +1,418 @@
+html{
+        scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(245, 192, 94);
+    color: black;
+    font-family: Arial, sans-serif;
+    max-width: 30%;
+}
+#d1{
+    width: fit-content;
+    position: relative;
+    left: 50px;
+    top: -50px;
+}
+#d1 button{
+    position: relative;
+    left: 870px;
+    top: -220px;
+    width: 180px;
+    height: 60px;body {
+    background-color: rgb(245, 192, 94);
+    color: black;
+    font-family: Arial, sans-serif;
+    max-width: 30%;
+}
+#d1{
+    width: fit-content;
+    position: relative;
+    left: 50px;
+    top: -50px;
+}
+#d1 button{
+    position: relative;
+    left: 870px;
+    top: -220px;
+    width: 180px;
+    height: 60px;
+    font-size: large;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#d1 button:hover{
+    transform: translateY(-2px);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+}
+#d2{
+    border-radius: 25px;
+    background-color: white;
+    width: 1330px;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+#i1{
+    position: relative;
+    left: 4%;
+}
+#f, #in {
+    height: 40px;
+    padding: 5px;
+}
+#d3{
+    position: relative;
+    left: 900px;
+    top: -300px;
+}
+#d3 h3{
+    font-family:'Times New Roman', Times, serif;
+}
+#d4{
+    background-color: white;
+    position: relative;
+    width: fit-content;
+    left: 500px;
+    border-radius: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+}
+#carousel-container {
+    overflow: hidden;
+    position: relative;
+    bottom: 50px;
+    left: -400px;
+    width: 1330px;
+    border-radius: 40px;
+}
+#image-carousel {
+    border-radius: 20px;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: auto;
+    padding-left: 20px;
+    height: max-content;
+    position: relative;
+    left: 200px;
+}
+#image-carousel img {
+    max-width: auto;
+    height: 500px;
+    border-radius: 20px;
+}
+.carousel-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#prev-button {
+    float: left;
+    position: relative;
+    top: 500px;
+    left: 40px;
+}
+#next-button {
+    float: right;
+    position: relative;
+    right: 20px;
+}
+#myLocation{
+    display: flex;
+    background-color: rgb(56, 55, 55);
+    width: 1330px;
+    border-radius: 25px;
+    justify-content: center;
+    height: 700px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 100px;
+}
+#locs{
+    border-radius: 100px;
+}
+
+#locations img{
+    width: 130px;
+    transition: transform 0.1s;
+    scale: 0.8;
+    border-radius: 20px;
+}
+#locations img:hover{
+    transform:scale(1.1);
+}
+#spr{
+    position: relative;
+    top: 140px;
+    right: 680px;
+}
+#kpr{
+    position: relative;
+    top: -610px;
+    right: 780px;
+}
+#hwd{
+    position: relative;
+    top: -320px;
+    right: 930px;
+}
+#bdp{
+    position: relative;
+    top: -165px;
+    right: 580px;
+}
+#bla{
+    position: relative;
+    top: -120px;
+    right: 500px;
+}
+#head{
+    justify-content: center;
+    position: relative;
+    top: -310px;
+    left: 130px;
+    font-size: small;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#di1{
+    position: relative;
+    left: 400px;
+}
+    font-size: large;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#d1 button:hover{
+    transform: translateY(-2px);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+}
+#d2{
+    border-radius: 25px;
+    background-color: white;
+    width: 1330px;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+#i1{
+    position: relative;
+    left: 4%;
+}
+#f, #in {
+    height: 40px;
+    padding: 5px;
+}
+h4{
+    position: relative;
+    left: 60px;
+    top: -60px;
+    max-width: fit-content;
+}
+#d3{
+    position: relative;
+    left: 900px;
+    top: -300px;
+}
+#d3 h3{
+    font-family:'Times New Roman', Times, serif;
+}
+#d4{
+    background-color: white;
+    width: fit-content;
+    position: relative;
+    top: -150px;
+    left: 500px;
+    border-radius: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+}
+#carousel-container {
+    overflow: hidden;
+    position: relative;
+    bottom: 50px;
+    left: -400px;
+    width: 1330px;
+    border-radius: 40px;
+}
+#image-carousel {
+    border-radius: 20px;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: auto;
+    padding-left: 20px;
+    height: max-content;
+    position: relative;
+    left: 200px;
+}
+#image-carousel img {
+    max-width: auto;
+    height: 500px;
+    border-radius: 20px;
+}
+.carousel-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#prev-button {
+    float: left;
+    position: relative;
+    top: 500px;
+    left: 40px;
+}
+#next-button {
+    float: right;
+    position: relative;
+    right: 20px;
+}
+#myLocation{
+    display: flex;
+    background-color: rgb(56, 55, 55);
+    width: 1330px;
+    border-radius: 25px;
+    justify-content: center;
+    height: 700px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 100px;
+}
+#locs{
+    border-radius: 100px;
+}
+
+#locations img{
+    width: 130px;
+    transition: transform 0.1s;
+    scale: 0.8;
+    border-radius: 20px;
+}
+#locations img:hover{
+    transform:scale(1.1);
+}
+#spr{
+    position: relative;
+    top: 140px;
+    right: 680px;
+}
+#kpr{
+    position: relative;
+    top: -610px;
+    right: 780px;
+}
+#hwd{
+    position: relative;
+    top: -320px;
+    right: 930px;
+}
+#bdp{
+    position: relative;
+    top: -165px;
+    right: 580px;
+}
+#bla{
+    position: relative;
+    top: -120px;
+    right: 500px;
+}
+#head{
+    justify-content: center;
+    position: relative;
+    top: -250px;
+    left: 130px;
+    font-size: small;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#di1{
+    position: relative;
+    left: 400px;
+}
+nav{
+    position: relative;
+    top: -70px;
+    left: 350px;
+    width: 700px;
+    background-color: rgb(243, 180, 62);
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav a:hover{
+    background-color: rgb(247, 201, 115);
+    border-radius: 15px;
+}
+#up{
+    border-radius: 100px;
+    background-color: #ff5722;
+    position: relative;
+    left: 650px;
+    top: -200px;
+    padding: 21px;
+    transition: transform .3s;
+}
+#up:hover{
+    cursor: pointer;
+    transform:translateY(-2px) ;
+}
+#info{
+    background-color: rgb(56, 55, 55);
+    width: 1330px;
+    height: 500px;
+    border-radius: 25px;
+    position: relative;
+    top: -170px;
+}
+#owner img{
+    max-width: 400px;
+    border-radius: 100px;
+    position: relative;
+    top: -20px;
+    padding: 70px;
+}
+#own-about{
+    border-radius: 50px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: fit-content;
+    color: white;
+}
+#own-pad{
+    background-image: url("pizza-bg.jpg");
+    background-size:cover;
+    position: relative;
+    left: 500px;
+    top: -490px;
+    width: 800px;
+    height: 400px;
+    border-radius: 25px;
+}
+#own-about img{
+    height: 40px;
+    padding: 5px;
+    position: relative;
+    top: 20px;
+}
