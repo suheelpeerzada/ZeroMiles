@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroMiles - Grill and Cafe</title>
+    <style>
+        body {
+            background-color: rgb(245, 192, 94);
+            color: black;
+            font-family: Arial, sans-serif;
+            max-width: fit-content;
+            height: fit-content;
+        }
+    </style>
+    <link rel="stylesheet" media="screen and (min-width:900px)" href="homepage.css">
+    <link rel="icon" href="icon.png">
+</head>
+
+<body>
+    <div id="d1">
+        <a href="index.html"><img src="zmlogo.png" id="i1"></a>
+        <a href="#carousel-container"><button id="menuButton" onclick="menu()"
+                style="background-color: rgb(49, 47, 47);">Menu</button></a>
+        <a href="https://gatoes.com/shop/zero-miles-sopore-kupwara-rd-near-guru-hospital-new-colony-sopore-jammu-and-kashmir-193201-1406"
+            target="_blank"><button>Order Now</button></a>
+    </div>
+    <div id="head">
+        <h2><u>Kashmir’s Favourite Restaurant Chain!</u></h2>
+    </div>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="#myLocation">Locations</a> |
+        <a href="#info">About</a> |
+        <a href="#d2">Contact Us</a>
+    </nav>
+    <div id="di1" style="display: none;">
+        <div id="carousel-container">
+            <button id="prev-button" class="carousel-button"><</button>
+                    <div id="image-carousel">
+                        <img src="menu/p1.jpg" alt="MENU IMAGE HERE">
+                        <img src="menu/p2.jpg" alt="MENU IMAGE HERE">
+                        <img src="menu/p3.jpg" alt="MENU IMAGE HERE">
+                        <img src="menu/p4.jpg" alt="MENU IMAGE HERE">
+                        <img src="menu/p5.jpg" alt="MENU IMAGE HERE">
+                        <img src="menu/p6.jpg" alt="MENU IMAGE HERE">
+                        <img src="menu/p7.jpg" alt="MENU IMAGE HERE">
+                        <img src="menu/p8.jpg" alt="MENU IMAGE HERE">
+                        <img src="menu/p9.jpg" alt="MENU IMAGE HERE">
+                        <img src="menu/p10.jpg" alt="MENU IMAGE HERE">
+                        <img src="menu/p11.jpg" alt="MENU IMAGE HERE">
+                        <img src="menu/p12.jpg" alt="MENU IMAGE HERE">
+                    </div>
+                    <button id="next-button" class="carousel-button">></button>
+        </div>
+    </div>
+    <div id="myLocation">
+        <img id="locs" src="locations1.png" alt="">
+
+        <div id="locations">
+            <a href="https://maps.app.goo.gl/DAZ3i7CkYVnjtMze6" target="_blank"><img id="spr" src="icon-sopore.png"
+                    alt=""></a>
+            <a href="https://maps.app.goo.gl/UuG8BsL3xfHAQ7se7" target="_blank"><img id="bdp" src="icon-bandipora.png"
+                    alt=""></a>
+            <a href="https://maps.app.goo.gl/g4kzgpACZEBMyXVS6" target="_blank"><img id="bla" src="icon-baramulla.png"
+                    alt=""></a>
+            <a href="https://maps.app.goo.gl/tvHMuUdwGJp4fWDs9" target="_blank"><img id="hwd" src="icon-handwara.png"
+                    alt=""></a>
+            <a href="https://maps.app.goo.gl/Ly5VaifsfCvoE8DPA" target="_blank"><img id="kpr" src="icon-kupwara.png"
+                    alt=""></a>
+        </div>
+    </div>
+    <div id="d2">
+        <img id="i1" src="favchainrestbg.png" alt="">
+    </div>
+    <div id="d3">
+        <h2>Connect with us on:</h2>
+        <a href="https://www.facebook.com/zeromilesgrillcafe/" target="_blank"><img id="f" src="facabook.png"
+                alt=""></a>
+        <h4>| /zeromilesgrillcafe</h4>
+        <a href="https://www.instagram.com/zeromilesgrillcafe/" target="_blank"><img id="in" src="intagram.png"
+                alt=""></a>
+        <h4>| /zeromilesgrillcafe</h4>
+    </div>
+    <div id="info">
+        <div id="owner">
+            <img src="owner.jpeg" alt="OWNER IMAGE HERE">
+        </div>
+        <div id="own-pad">
+            <div id="own-about">
+                <b><u>JIBRAN KHAN</u></b> <br><br>
+                Foodpreneur | Philanthropist | Motivator <br>
+                <u>Founder & Host at Zero Miles - Grill & Cafe</u> <br>
+                <a href="https://www.facebook.com/jibran.khan.921" target="_blank"><img class="fb" src="facabook.png"
+                        alt=""></a>
+                <a href="https://www.instagram.com/jibrankhan_jk/" target="_blank"><img class="in" src="intagram.png"
+                        alt=""></a>
+                <a href="https://in.linkedin.com/in/jibran-khan-a2850986" target="_blank"><img class="li"
+                        src="linkedin.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <a href="#d1"><button id="up">^</button></a>
+    <div id="d4">
+        <h5>Web Development Project by Suheel Firdous</h5>
+    </div>
+    <script>
+        var menuImages = document.getElementById("di1");
+        var menuButton = document.getElementById("menuButton");
+        var imageCarousel = document.getElementById("image-carousel");
+        var imgon = imageCarousel.getElementsByTagName("img");
+        var prevButton = document.getElementById("prev-button");
+        var nextButton = document.getElementById("next-button");
+        var visibleImages = 3;
+        var currentPosition = 0;
+        function updateGallery() {
+            for (var i = 0; i < imgon.length; i++) {
+                imgon[i].style.opacity = 0.5;
+                imgon[i].style.transform = "scale(0.8)";
+            }
+
+            imgon[currentPosition].style.opacity = 1;
+            imgon[currentPosition].style.transform = "scale(1)";
+            for (var i = 0; i < imgon.length; i++) {
+                if (i == 0) {
+                    image[i].style.display = "block";
+                }
+                if (i !== 0 && i >= currentPosition - 1 && i <= currentPosition + 1) {
+                    imgon[i].style.display = "block";
+                } else if (imgon[0] !== currentPosition) {
+                    imgon[i].style.display = "none";
+                }
+            }
+        }
+        function menu() {
+            if (menuImages.style.display === "none") {
+                menuImages.style.display = "block";
+                menuButton.textContent = "Close";
+            } else {
+                menuImages.style.display = "none";
+                menuButton.textContent = "Menu";
+            }
+            currentPosition = 0;
+        }
+        menuButton.addEventListener("click", function () {
+            menuImages.classList.toggle("show");
+        });
+
+        function moveCarousel(direction) {
+            var imageWidth = imageCarousel.children[0].clientWidth;
+            if (direction === "next" && currentPosition < imgon.length - 1) {
+                currentPosition++;
+            } else if (direction === "prev" && currentPosition > 0) {
+                currentPosition--;
+            }
+            var translateX = -currentPosition * imageWidth;
+            imageCarousel.style.transform = `translateX(${translateX}px)`;
+
+            updateGallery();
+        }
+
+        prevButton.addEventListener("click", function () {
+            moveCarousel("prev");
+        });
+
+        nextButton.addEventListener("click", function () {
+            moveCarousel("next");
+        });
+        updateGallery();
+    </script>
+</body>
+
+</html>
